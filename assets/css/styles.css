@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #0a0a0a;
+    font-family: Pixel;
+    font-size: 20px;
+    color: white;
+}
+
+#header {
+    position: sticky;
+    top: 0px;
+    height: 5vh;
+    min-height: 60px;
+    max-height: 120px;
+    width: 100%;
+    border-bottom: 5px solid white;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    background-color: #0a0a0a;
+    font-family: Pixel;
+}
+
+h1 {
+    font-family: Pixel;
+    font-size: 35px;
+}
+
+h2 {
+    display: inline-block;
+    font-family: Pixel;
+    font-size: 25px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(../fonts/Rubik-Bold.woff2);
+}
+
+.box {
+    display: block;
+    border: 3px solid grey;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+}
+
+.box-text {
+    width: 100%;
+    text-align: center;
+}
+
+.home-img {
+    top: 5vh;
+    display: block;
+    z-index: -1;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-buttons a {
+    display: block;
+    width: auto;
+    height: 45px;
+    padding: 0px 5px;
+}
+
+.home-buttons div {
+    display: block;
+    height: 45px;
+    padding: 0px 5px;
+}
+
+.home-buttons h2 {
+    position: relative;
+    bottom: 10px;
+}
+
+.home-buttons img {
+    display: inline-block;
+    object-fit: scale-down;
+    position: relative;
+    top: 2px;
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    margin-right: 0;
+}
+
+#The-Game-of-Civilizations-box {
+    width: 80%;
+    transition: height 0.1s ease-out;
+}
+
+#The-Game-of-Civilizations-box .box-text {
+    width: 90%;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0;
+}
+
+#The-Game-of-Civilizations-box:hover {
+    display: block;
+    height: 150px;
+}
+
+#The-Game-of-Civilizations-box:hover .box-text {
+    transition: opacity 0.1s ease-out 0.1s;
+    opacity: 1;
+}

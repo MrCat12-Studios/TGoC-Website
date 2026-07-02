@@ -1,0 +1,9 @@
+# Attributtions
+github icon: https://commons.wikimedia.org/wiki/File:GitHub_Invertocat_Logo.svg
+discord icon: https://www.flaticon.com/free-icon/discord_5968968?term=discord&page=1&position=4&origin=search&related_id=5968968
+download icon: https://www.flaticon.com/free-icon/downloading_2382067?term=download&page=1&position=10&origin=search&related_id=2382067
+
+# Other
+nice color: rgba(69, 32, 125, 0.1) dark purple
+nice color: rgba(173, 62, 62, 0.1) coral
+nice color: rgba(200, 32, 32, 0.6) blood
