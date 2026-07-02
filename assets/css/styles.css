@@ -14,7 +14,7 @@ body {
     min-height: 60px;
     max-height: 120px;
     width: 100%;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid0a0a0a;
     display: flex;
     z-index: 2;
     align-items: center;
@@ -40,8 +40,8 @@ a {
 }
 
 @font-face {
-    font-family: Rubik;
-    src: url(../fonts/Rubik-Bold.woff2);
+    font-family: Pixel;
+    src: url(../fonts/Jersey10-Regular.ttf);
 }
 
 .box {
