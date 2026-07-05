@@ -1,5 +1,6 @@
 body {
-    margin: 0px;
+    height: 100%;
+    margin: auto;
     padding: 0px;
     background-color: #0a0a0a;
     font-family: Pixel;
@@ -7,14 +8,13 @@ body {
     color: white;
 }
 
-#header {
+header {
     position: sticky;
     top: 0px;
     height: 5vh;
     min-height: 60px;
     max-height: 120px;
     width: 100%;
-    border-bottom: 5px solid0a0a0a;
     display: flex;
     z-index: 2;
     align-items: center;
@@ -22,12 +22,26 @@ body {
     font-family: Pixel;
 }
 
+footer {
+    position: relative;
+    bottom: -25vh;
+    width: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-top: 3px solid white;
+    text-align: center;
+}
+
 h1 {
+    margin-left: 5px;
     font-family: Pixel;
     font-size: 35px;
+    border-bottom: 3px solid white;
 }
 
 h2 {
+    margin-left: 5px;
     display: inline-block;
     font-family: Pixel;
     font-size: 25px;
@@ -35,8 +49,7 @@ h2 {
 
 a {
     color: white;
-    text-decoration: none;
-    font-weight: bold;
+    text-decoration: underline white solid 2px;
 }
 
 @font-face {
@@ -84,6 +97,8 @@ a {
     width: auto;
     height: 45px;
     padding: 0px 5px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .home-buttons div {
@@ -108,24 +123,30 @@ a {
     margin-right: 0;
 }
 
-#The-Game-of-Civilizations-box {
-    width: 80%;
+.product {
+    width: auto;
+    max-width: 20rem;
     transition: height 0.1s ease-out;
 }
 
-#The-Game-of-Civilizations-box .box-text {
+.product .box-text {
     width: 90%;
     margin: auto;
     opacity: 0;
     transition: opacity 0;
 }
 
-#The-Game-of-Civilizations-box:hover {
+.product:hover {
     display: block;
     height: 150px;
 }
 
-#The-Game-of-Civilizations-box:hover .box-text {
+.product:hover .box-text {
     transition: opacity 0.1s ease-out 0.1s;
     opacity: 1;
+}
+
+#The-Game-of-Civilizations-box {
+    background: rgba(200, 32, 32, 0.1);
+    border-color: rgba(200, 32, 32, 0.6);
 }

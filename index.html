@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Home
-showTitle: false
+showTitle: False
 ---
 
 <img class="home-img" style="position: relative; top: 0;" src="assets/img/TGoC_panorama.webp">
-<div style="margin-bottom: 100px; position: absolute; top: 0;">
+<div style="margin: 1vw; margin-bottom: 100px; position: absolute; top: 0; text-align: center;">
     <br> <br> <br> <!-- serves as a margin -->
-    <h1 class="box-text"> The Game of Civilizations </h1>
+    <h1 class="box-text" style="margin: 1vw; border-bottom-width: 0;"> The Game of Civilizations </h1>
     <p class="box-text" style="top: 120px; width: 90%; margin-left: 20px; margin-right: 20px">
         The Game of Civilizations is a free open source 2D multiplayer strategy game where each player takes the role of a leader and guides their people to <span style="font-style: italic"> &lt;unknown characters&gt; </span>
     </p>
@@ -30,12 +30,17 @@ showTitle: false
 
 <br>
 
-<h1 style="width: 90%; margin: 0 20px 5px; padding-bottom: 5px; border-bottom: 3px solid white;"> Our Products </h1>
+<h1 style="width: 90%; margin-bottom: 0 20px 5px; padding-bottom: 5px; border-bottom: 3px solid white;"> Our Products </h1>
 
 <div class="home-buttons" style="width: 90%; margin: 30px 20px;">
-    <div class="box" id="The-Game-of-Civilizations-box" style="background: rgba(200, 32, 32, 0.1); border-color: rgba(200, 32, 32, 0.6);">
+    {% assign colorIndex = 0 %}
+
+    {% assign curIndex = colorIndex | modulo: 5 %}
+    <div class="box product" style="background-color: {{ site.data.box-colors.backgrounds[curIndex] }}; border-color: {{ site.data.box-colors.borders[curIndex] }};">
         <img src="assets/img/TGoC_logo.png">
         <h2 style="display: inline"> The Game of Civilizations </h2>
-        <p class="box-text"> The main game of this project. All of our products revolve around it. Keep in mind that it is still under development </p>
+        <p class="box-text"> The main game of this project. All of our products revolve around it. Keep in mind that it is still under development. </p>
     </div>
+    {% assign colorIndex = colorIndex | plus: 1 %}
+
 </div>
